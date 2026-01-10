@@ -95,3 +95,9 @@ text-decoration: none;
 .assignments a:hover{
 background-color: #ebd8d0;
 }
+
+footer {
+  display: flex;
+justify-content: center;
+
+}
