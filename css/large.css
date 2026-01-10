@@ -5,5 +5,8 @@
     column-count: 3;
 }
 
+body {
+    max-width: 60rem;
+    margin: auto;
 
 } /* end media query*/
