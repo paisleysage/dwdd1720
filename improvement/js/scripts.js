@@ -1,3 +1,14 @@
+// fat function to add list items
+let addLI = (list, message) => {
+theList = document.querySelector(list);
+let myListItem = document.createElement('li');
+myListItem.textContent = "hello again"
+theList.appendChild(myListItem);
+
+} // end of add list item function
+
+
+
 document.querySelector('#calculate').addEventListener('click', () => {
 const width = Number (document.querySelector('#width').value);
 console.log(width);
@@ -31,10 +42,7 @@ let primer = ceiling + walls
 console.log(primer + " gallons of primer")
 
 
-let mydestul = document.querySelector('#paint')
-let listItem = document.createElement('li');
-listItem.textContent = ceiling + " gallons of flat paint for the ceiling";
-mydestul.appendChild(listItem);
+addLI("#paint", 'hello world')
 
 
 }) // end of the calculate function
