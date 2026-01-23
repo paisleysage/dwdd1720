@@ -1,0 +1,195 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+/*FONTS AND COLORS*/
+
+body {
+  font-family: amandine, sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --textcolor: #6f5a6a;
+}
+
+body h1 {
+  font-family: espiritu-script, sans-serif;
+}
+
+/*NAVIGATION*/
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: #f1ede4;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+nav a {
+  padding: 0.8rem 0.5rem;
+  display: block;
+  text-decoration: none;
+  color: #6f5a6a;
+  font-weight: var(--bold);
+  font-size: 1.25rem;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #6f5a6a;
+}
+
+/*ABOUT SECTION*/
+
+section#about {
+  background-color: #b6a7ba;
+  color: #6f5a6a;
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#about h1 {
+  font-size: 3.5rem;
+}
+
+section#about h2 {
+  color: #6f5a6a;
+}
+
+/*PROJECTS SECTION*/
+
+section#projects {
+  background-color: #b6a7ba;
+  color: #6f5a6a;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+section#projects h1 {
+  font-size: 3rem;
+}
+
+div.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.parent a {
+  flex-basis: 100%;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+section#projects figure {
+  margin: 0;
+  height: 100%;
+}
+
+section#projects figcaption {
+  color: white;
+  font-family: amandine, sans-serif;
+  font-weight: var(--regular);
+  text-decoration: none;
+  text-align: center;
+}
+
+section#projects img {
+  width: 100%;
+  border-radius: 7.5px;
+}
+
+section#projects img:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*CONTACT SECTION*/
+
+section#contact {
+  background-color: #b6a7ba;
+  height: 90vh;
+  padding: 50px;
+}
+
+div.info a {
+    display: flex;
+ display: flex;
+    flex-direction: column;
+  justify-content: center;
+}
+
+section#contact h1 {
+  font-size: 3.5rem;
+  color: #6f5a6a;
+  padding: 0 0 50px 0;
+}
+
+section#contact ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+section#contact li {
+}
+
+section#contact a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+section#contact a img {
+  height: 50px;
+  display: block;
+  width: 100%;
+  padding: .5rem;
+}
+
+section#contact a:hover {
+    text-decoration: underline;
+    transform: translateY(4px);
+}
+
+footer {
+background-color: #f1ede4;
+margin: 0;
+}
+
+footer p, footer span{
+    margin: 0;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: .75rem 0;
+    color: #6f5a6a;
+    font-weight: var(--bold);
+}
+
+footer {
+  height: 10vh;
+}
+
+
