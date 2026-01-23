@@ -30,4 +30,11 @@ console.log(ceiling + " gallons of flat paint for the ceiling")
 let primer = ceiling + walls
 console.log(primer + " gallons of primer")
 
+
+let mydestul = document.querySelector('#paint')
+let listItem = document.createElement('li');
+listItem.textContent = ceiling + " gallons of flat paint for the ceiling";
+mydestul.appendChild(listItem);
+
+
 }) // end of the calculate function
