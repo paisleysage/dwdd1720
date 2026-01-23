@@ -2,7 +2,7 @@
 let addLI = (list, message) => {
 theList = document.querySelector(list);
 let myListItem = document.createElement('li');
-myListItem.textContent = "hello again"
+myListItem.textContent = message
 theList.appendChild(myListItem);
 
 } // end of add list item function
@@ -42,7 +42,12 @@ let primer = ceiling + walls
 console.log(primer + " gallons of primer")
 
 
-addLI("#paint", 'hello world')
+addLI("#paint", `${primer} gallons of primer paint for the walls and ceiling` )
+addLI("#paint", `${walls} gallons of semi-gloss paint for the walls (easy to clean)` )
+addLI("#paint", `${ceiling} gallons of flat paint for the ceiling` )
 
+addLI("#carpet", `${carpet} yards of carpet` )
+addLI("#carpet", `${carpet} yards of padding` )
+addLI("#carpet", `${tackstrip} feet of tackstrip for the carpet` )
 
 }) // end of the calculate function
