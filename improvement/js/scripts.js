@@ -4,12 +4,13 @@ theList = document.querySelector(list);
 let myListItem = document.createElement('li');
 myListItem.textContent = message
 theList.appendChild(myListItem);
-
 } // end of add list item function
 
-
-
 document.querySelector('#calculate').addEventListener('click', () => {
+    // clean out existing list
+    document.querySelector('#paint').innerHTML ="";
+document.querySelector('#carpet').innerHTML ="";
+
 const width = Number (document.querySelector('#width').value);
 console.log(width);
 
