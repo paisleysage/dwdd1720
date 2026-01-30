@@ -4,10 +4,90 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+
+
+body {
+    background-color: #edebe3;
+    font-family: "DM Serif Text", serif;
+}
+
 label {
     display: block;
 }
 
+h1 {
+    text-align: center;
+    color: #716d80;
+}
 
+/* switches */
 .hideMe{display: none;}
 .showMe{display: block;}
+
+/* New Profile Styling */
+
+#newProfile {
+padding: 1rem;
+
+}
+
+#newProfile p {
+text-align: center;
+color: #252539;
+}
+
+#newProfile label {
+    margin: 1rem;
+}
+
+#newProfile input, #newProfile select {
+    width: 100%;
+    height: 40px;
+}
+
+#newProfile input[type=submit] {
+    background-color: #979f7b;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    color: #252539;
+    
+}
+
+#newProfile button {
+    
+}
+
+
+
+/* Current Profile Styling */
+
+#myProfile {
+padding: 1rem;
+}
+
+#myProfile section{
+margin: 10px;
+text-align: center;
+}
+
+#myProfile img {
+    padding: 1rem;
+width: 200px;
+}
+
+#myProfile p {
+font-size: 2rem;
+}
+
+#myProfile button {
+background-color: #979f7b;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    color: #252539;
+}
