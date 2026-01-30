@@ -13,6 +13,15 @@ localStorage.setItem('wellness-text', et)
 })
 
 
+const deleteBtn = document.querySelector('#delProfile')
+deleteBtn.addEventListener('click' , () => {
+localStorage.removeItem('wellness-first')
+localStorage.removeItem('wellness-last')
+localStorage.removeItem('wellness-text')
+localStorage.removeItem('wellness-emoji')
+location.reload();
+})
+
 
 document.querySelector('#first').textContent = localStorage.getItem('wellness-first')
 document.querySelector('#last').textContent = localStorage.getItem('wellness-last')
