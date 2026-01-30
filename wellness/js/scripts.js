@@ -11,3 +11,10 @@ localStorage.setItem('wellness-emoji', ev)
 let et = select.options [select.selectedIndex].text;
 localStorage.setItem('wellness-text', et)
 })
+
+
+
+document.querySelector('#first').textContent = localStorage.getItem('wellness-first')
+document.querySelector('#last').textContent = localStorage.getItem('wellness-last')
+document.querySelector('#emotion').textContent = localStorage.getItem('wellness-text')
+document.querySelector('#emoji').src = localStorage.getItem('wellness-emoji')
