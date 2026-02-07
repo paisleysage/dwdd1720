@@ -195,7 +195,7 @@ export const presidents = [
     took_office: "1885-03-04",
     left_office: "1889-03-04",
     party: "Democrat",
-    photo: "22-24-cleveland.webp",
+    photo: "22-cleveland.webp",
   },
   {
     name: "Benjamin Harrison",
