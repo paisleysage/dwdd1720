@@ -15,11 +15,16 @@ myImage.setAttribute("alt", presidents[x].name)
 
 
 let myCaption = document.createElement('figcaption')
-myCaption.innerHTML = `Served ${presidents[x].took_office} to ${presidents[x].left_office} <br>Lived from ${presidents[x].born} to ${presidents[x].died} <br>Member of ${presidents[x].party} Party`
+myCaption.innerHTML = `Served ${presidents[x].took_office} to ${presidents[x].left_office} <br>Lived from ${presidents[x].born} to ${presidents[x].died} <br>Party: ${presidents[x].party}`
 
-myTarget.appendChild(barDiv)
-myTarget.appendChild(myImage)
-myTarget.appendChild(myCaption)
+
+let myFigure = document.createElement('figure')
+
+myFigure.appendChild(barDiv)
+myFigure.appendChild(myImage)
+myFigure.appendChild(myCaption)
+
+myTarget.appendChild(myFigure)
 
 
 } // end of loop
