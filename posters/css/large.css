@@ -1,3 +1,7 @@
 @media only screen and (min-width: 60rem) {
-
+  /* grid view */
+  body.grid main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 } /* end media query*/

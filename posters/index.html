@@ -1,28 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body class="grid">
+    <header class="grid">
+      <h1>Star Wars Film Posters</h1>
+      <img
+        src="images/grid.svg"
+        width="44"
+        height="44"
+        alt="grid layout"
+        id="grid"
+      />
+      <img
+        src="images/list.svg"
+        width="44"
+        height="44"
+        alt="list layout"
+        id="list"
+      />
+    </header>
 
-</head>
-<body>
-    <section>
-        <img src="images/green.png" alt="green btn" id="greenImage">
-        <img src="images/red.png" alt="red btn" id="redImage">
-    </section>
-    
-    <div>
-<h1>The Cards go Here</h1>
+    <main id="cards"></main>
 
-    </div>
-
-
-    <script src="js/scripts.js"></script>
-</body>
+    <script src="js/scripts.js" type="module"></script>
+    <footer>
+      <p>Paisley Cooper ©2026</p>
+    </footer>
+  </body>
 </html>
