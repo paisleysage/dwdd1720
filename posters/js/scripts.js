@@ -32,5 +32,9 @@ for (let x = 0; x < films.length; x++) {
   myFigure.appendChild(myImage);
   myFigure.appendChild(myCaption);
 
-  myTarget.appendChild(myFigure);
+  let container = document.createElement("div");
+  container.classList.add("container");
+  container.appendChild(myFigure);
+
+  myTarget.appendChild(container);
 } // end of loop
