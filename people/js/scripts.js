@@ -1,3 +1,5 @@
 import { people } from "../data/people.js";
 
-console.log("I am connected");
+// tag the html elements
+const myNavigation = document.querySelector("nav");
+const myParent = document.querySelector("#peopleHere");
