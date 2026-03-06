@@ -19,8 +19,23 @@ html {
   margin: 10px;
   padding: 0;
   width: 150px;
-  border: solid 4px green;
 }
+
+#peopleHere figure.male figcaption {
+  border: solid 4px blue;
+  color: blue;
+}
+
+#peopleHere figure.female figcaption {
+  border: solid 4px pink;
+  color: pink;
+}
+
+#peopleHere figure.other figcaption {
+  border: solid 4px red;
+  color: red;
+}
+
 #peopleHere img {
   width: 100%;
 }

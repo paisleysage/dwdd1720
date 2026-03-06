@@ -19,6 +19,20 @@ function displayPeople(x) {
 
       const myCaption = document.createElement("figcaption");
       myCaption.textContent = person.name;
+
+      // assign gender class
+      console.log(person.gender);
+      switch (person.gender) {
+        case "female":
+          myFigure.className = "female";
+          break;
+        case "male":
+          myFigure.className = "male";
+          break;
+        default:
+          myFigure.className = "other";
+      } // end of switch
+
       // assemble the parts
       myFigure.appendChild(myImage);
       myFigure.appendChild(myCaption);
