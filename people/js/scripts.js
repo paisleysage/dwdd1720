@@ -1,39 +1,51 @@
 import { people } from "../data/people.js";
 console.log(people);
 
+const header = document.getElementById("header");
+
 // tag the html elements
 const myNavigation = document.querySelector("nav");
 const myParent = document.querySelector("#peopleHere");
 
 // create an all people button
 const btnAll = document.createElement("button");
-btnAll.textContent = "All";
-btnAll.addEventListener("click", () => displayPeople(people));
+btnAll.textContent = "ALL";
+btnAll.addEventListener("click", () => {
+  displayPeople(people);
+  header.className = "a";
+});
+btnAll.classList.add("all");
 
 // create a female button
 const btnFemale = document.createElement("button");
-btnFemale.textContent = "Females";
+btnFemale.classList.add("female");
+btnFemale.textContent = "FEMALES";
 btnFemale.addEventListener("click", () => {
   const arrayFemale = people.filter((person) => person.gender === "female");
   displayPeople(arrayFemale);
+  header.className = "f";
 }); // end of button
 
 // create a male button
 const btnMale = document.createElement("button");
-btnMale.textContent = "Males";
+btnMale.classList.add("male");
+btnMale.textContent = "MALES";
 btnMale.addEventListener("click", () => {
   const arrayMale = people.filter((person) => person.gender === "male");
   displayPeople(arrayMale);
+  header.className = "m";
 }); // end of button
 
-// create am other button
+// create an other button
 const btnOther = document.createElement("button");
-btnOther.textContent = "Other";
+btnOther.classList.add("other");
+btnOther.textContent = "OTHER";
 btnOther.addEventListener("click", () => {
   const arrayOther = people.filter(
     (person) => person.gender != "male" && person.gender != "female",
   );
   displayPeople(arrayOther);
+  header.className = "o";
 }); // end of button
 
 // add buttons to page

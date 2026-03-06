@@ -19,27 +19,122 @@ html {
   margin: 10px;
   padding: 0;
   width: 150px;
+  border-radius: 12px;
+}
+/* header and nav */
+div.top {
+  position: sticky;
+  top: 0;
 }
 
+header {
+  background-color: #363636;
+  margin: 0;
+  padding: 10px;
+}
+
+header.f {
+  background-color: #685374;
+  margin: 0;
+  padding: 10px;
+}
+
+header.m {
+  background-color: #1b314c;
+  margin: 0;
+  padding: 10px;
+}
+
+header.o {
+  background-color: #3d1f12;
+  margin: 0;
+  padding: 10px;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+  background-color: white;
+}
+nav button {
+  width: 125px;
+  height: 35px;
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 10 px;
+}
+nav button.all {
+  border: 3px solid #363636;
+  border-radius: 15px;
+  color: #363636;
+}
+nav button.female {
+  border: 3px solid #685374;
+  border-radius: 15px;
+  color: #685374;
+}
+nav button.male {
+  border: 3px solid #1b314c;
+  border-radius: 15px;
+  color: #1b314c;
+}
+nav button.other {
+  border: 3px solid #3d1f12;
+  border-radius: 15px;
+  color: #3d1f12;
+}
+
+/* people class styling */
+#peopleHere figure.male {
+  border: solid 5px #1b314c;
+  background-color: #1b314c33;
+}
 #peopleHere figure.male figcaption {
-  border: solid 4px blue;
-  color: blue;
+  color: #1b314c;
 }
 
+#peopleHere figure.female {
+  border: solid 5px #685374;
+  background-color: #68537433;
+}
 #peopleHere figure.female figcaption {
-  border: solid 4px pink;
-  color: pink;
+  color: #685374;
 }
 
-#peopleHere figure.other figcaption {
-  border: solid 4px red;
-  color: red;
+#peopleHere figure.other {
+  border: solid 5px #3d1f12;
+  background-color: #3d1f1233;
 }
+#peopleHere figure.other figcaption {
+  color: #3d1f12;
+}
+
+/* other */
 
 #peopleHere img {
   width: 100%;
+  border-radius: 7px 7px 0 0;
 }
 
 #peopleHere figcaption {
   text-align: center;
+}
+
+footer {
+  margin: 0;
+  padding: 1px;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #363636;
+  color: white;
 }
