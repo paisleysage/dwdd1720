@@ -12,6 +12,10 @@ function displayPeople(x) {
       const myFigure = document.createElement("figure");
 
       const myImage = document.createElement("img");
+      const explodedArray = person.url.split("/");
+      const charNumber = explodedArray[5];
+      myImage.src = `https://resources.dgmuvu.com/characters/${charNumber}.jpg`;
+      myImage.alt = person.name;
 
       const myCaption = document.createElement("figcaption");
       myCaption.textContent = person.name;
