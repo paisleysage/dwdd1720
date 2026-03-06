@@ -5,8 +5,46 @@ console.log(people);
 const myNavigation = document.querySelector("nav");
 const myParent = document.querySelector("#peopleHere");
 
+// create an all people button
+const btnAll = document.createElement("button");
+btnAll.textContent = "All";
+btnAll.addEventListener("click", () => displayPeople(people));
+
+// create a female button
+const btnFemale = document.createElement("button");
+btnFemale.textContent = "Females";
+btnFemale.addEventListener("click", () => {
+  const arrayFemale = people.filter((person) => person.gender === "female");
+  displayPeople(arrayFemale);
+}); // end of button
+
+// create a male button
+const btnMale = document.createElement("button");
+btnMale.textContent = "Males";
+btnMale.addEventListener("click", () => {
+  const arrayMale = people.filter((person) => person.gender === "male");
+  displayPeople(arrayMale);
+}); // end of button
+
+// create am other button
+const btnOther = document.createElement("button");
+btnOther.textContent = "Other";
+btnOther.addEventListener("click", () => {
+  const arrayOther = people.filter(
+    (person) => person.gender != "male" && person.gender != "female",
+  );
+  displayPeople(arrayOther);
+}); // end of button
+
+// add buttons to page
+myNavigation.appendChild(btnAll);
+myNavigation.appendChild(btnFemale);
+myNavigation.appendChild(btnMale);
+myNavigation.appendChild(btnOther);
+
 // loop through all the people
 function displayPeople(x) {
+  myParent.textContent = "";
   x.forEach(
     (person) => {
       const myFigure = document.createElement("figure");
