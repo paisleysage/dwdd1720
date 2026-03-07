@@ -32,7 +32,7 @@ btnMen.addEventListener("click", () => {
 // create a republican button
 const btnRep = document.createElement("button");
 btnRep.classList.add("republican");
-btnRep.textContent = "Republican";
+btnRep.textContent = "Republicans";
 btnRep.addEventListener("click", () => {
   const arrayRep = senators.filter((person) => person.party === "R");
   displaySenators(arrayRep);
@@ -41,7 +41,7 @@ btnRep.addEventListener("click", () => {
 // create a democrat button
 const btnDem = document.createElement("button");
 btnDem.classList.add("democrat");
-btnDem.textContent = "Democrat";
+btnDem.textContent = "Democrats";
 btnDem.addEventListener("click", () => {
   const arrayDem = senators.filter((person) => person.party === "D");
   displaySenators(arrayDem);
@@ -66,17 +66,24 @@ function displaySenators(x) {
       myImage.src = `https://unitedstates.github.io/images/congress/225x275/${senators.id}.jpg`;
       myImage.alt = senators.first_name + senators.last_name;
 
-      const myCaption = document.createElement("caption");
-      myCaption.textContent = `${senators.first_name} ${senators.last_name}`;
+      const myName = document.createElement("figcaption");
+      myName.textContent = `${senators.first_name} ${senators.last_name}`;
+      myName.classList.add("my-name");
 
       console.log(senators.first_name);
       console.log(senators.last_name);
 
-      const myState = document.createElement("caption");
-      myState.textContent = `${senators.party} from ${senators.state}`;
+      const myState = document.createElement("figcaption");
+      myState.textContent = `State: ${senators.state}`;
+      myState.classList.add("my-state");
 
       const myPhone = document.createElement("figcaption");
       myPhone.textContent = senators.phone;
+      myPhone.classList.add("my-phone");
+
+      const myOffice = document.createElement("figcaption");
+      myOffice.textContent = senators.office;
+      myOffice.classList.add("my-office");
 
       // assign gender class
       console.log(senators.gender);
@@ -101,10 +108,11 @@ function displaySenators(x) {
       } // end of switch
 
       // assemble the parts
-      myFigure.appendChild(myCaption);
+      myFigure.appendChild(myName);
       myFigure.appendChild(myImage);
       myFigure.appendChild(myState);
       myFigure.appendChild(myPhone);
+      myFigure.appendChild(myOffice);
 
       // attach to HTML page
       myParent.appendChild(myFigure);

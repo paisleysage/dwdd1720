@@ -1,4 +1,23 @@
 @media only screen and (min-width: 35rem) {
+  #senatorsHere figure {
+    margin: 2%;
+    flex-basis: 46%;
+  }
 
-    
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 8px;
+    margin: 0;
+  }
+
+  nav button {
+    width: 150px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 10 px;
+    margin: 0;
+  }
 } /* end media query*/
