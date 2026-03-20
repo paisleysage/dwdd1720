@@ -35,6 +35,12 @@ function showShip(shipData) {
   myImage.src = `https://resources.dgmuvu.com/ships/${urlArray[5]}.jpg`;
   myCaption.textContent = shipData.name;
 
+  // error checking for image
+  myImage.addEventListener("error", () => {
+    myImage.src = "https://resources.dgmuvu.com/ships/placeholder.jpg";
+    myCaption.textContent = `The ${shipData.name} is lost in space`;
+  });
+
   // assemble the figure
   myFigure.appendChild(myImage);
   myFigure.appendChild(myCaption);
@@ -42,4 +48,4 @@ function showShip(shipData) {
   // add figure to html
   myViewer.textContent = "";
   myViewer.appendChild(myFigure);
-}
+} // end viewer
