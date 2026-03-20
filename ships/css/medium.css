@@ -1,4 +1,30 @@
 @media only screen and (min-width: 35rem) {
+  body {
+    display: grid;
+    grid-template-columns: 160px;
+  }
 
-    
+  header {
+    height: 115px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    display: block;
+    margin-left: 1rem;
+  }
+  nav button {
+    width: 100%;
+    min-height: 60px;
+  }
+
+  header {
+    grid-column: 1 / span 2;
+  }
+  footer {
+    grid-column: 1 / span 2;
+  }
 } /* end media query*/

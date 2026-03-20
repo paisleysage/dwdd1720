@@ -1,6 +1,73 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "sui-generis", sans-serif;
+  background-image: url(../images/seamless-stars.jpg);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-image: url("../images/seamless-stars.jpg");
+  background-position: center;
+  background-size: cover; /* Ensures image covers the header area */
+  height: 75px;
+}
+
+header h1 {
+  color: #ffe81f;
+  text-align: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav button {
+  border-radius: 10px;
+  min-height: 45px;
+}
+
+nav button:hover {
+  background-color: #aec8d9;
+}
+
+main figure {
+  margin: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main img {
+  width: 100%;
+  max-width: 600px;
+}
+
+main figcaption {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+footer {
+  color: #ffe81f;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.2rem;
+}
