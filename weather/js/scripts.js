@@ -41,6 +41,12 @@ function currentWeather(weatherResults) {
   myDate.textContent = d.toDateString();
   parentTag.appendChild(myDate);
 
+  // current temp
+  myCurrentTemp = document.createElement("p");
+  myCurrentTemp.className = "temp";
+  myCurrentTemp.innerHTML = weatherResults.main.temp + "&deg;F";
+  parentTag.appendChild(myCurrentTemp);
+
   // current icon
   const myWeatherIcon = document.createElement("img");
   // myWeatherIcon.src = `https://openweathermap.org/payload/api/media/file/${weatherResults.weather[0].icon}%402x.png`;
@@ -48,11 +54,11 @@ function currentWeather(weatherResults) {
   myWeatherIcon.alt = weatherResults.weather[0].description;
   parentTag.appendChild(myWeatherIcon);
 
-  // current temp
-  myCurrentTemp = document.createElement("p");
-  myCurrentTemp.className = "temp";
-  myCurrentTemp.innerHTML = weatherResults.main.temp + "&deg;F";
-  parentTag.appendChild(myCurrentTemp);
+  // current weather type
+  myCurrentType = document.createElement("p");
+  myCurrentType.className = "type";
+  myCurrentType.innerHTML = weatherResults.weather[0].description;
+  parentTag.appendChild(myCurrentType);
 } // end of current weather
 
 // ask for a new zipcode

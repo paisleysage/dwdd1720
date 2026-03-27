@@ -12,12 +12,17 @@ html {
 }
 
 body {
+  background-color: #fdd89c60;
+  font-family: "dovetail-mvb", serif;
 }
 
+/* header */
 header {
   display: grid;
   grid-template-columns: auto 42px;
-  background-color: pink;
+  background-color: #fdd89c;
+  color: #883000;
+  font-weight: 700;
 }
 
 header span:nth-child(2) {
@@ -26,16 +31,99 @@ header span:nth-child(2) {
 
 #town {
   padding: 0.5rem;
+  font-size: 1.4rem;
 }
 
+/* body */
+#weatherCard {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#weatherCard img {
+  max-width: 100px;
+  margin: auto;
+}
+
+#weatherCard p {
+  margin: 8px;
+}
+
+.date {
+  color: #c76356;
+  font-size: 1.2rem;
+}
+
+.temp {
+  font-size: 3rem;
+  color: #883000;
+  font-weight: 700;
+}
+
+.type {
+  color: #c76356;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/* pop up */
 aside {
   display: none;
 }
 
 aside.show {
   display: block;
+  position: absolute;
+  top: 49px;
+  height: 400px;
+  left: 10px;
+  right: 10px;
+  padding: 1rem 2vw;
+  border-radius: 15px;
+  background-color: #c76356;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px black;
 }
 
+aside p {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+aside input {
+  display: flex;
+  align-content: flex-end;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 12rem;
+  border: none;
+  padding: 0.2rem;
+}
+
+aside button {
+  background-color: #fdd89c;
+  border: none;
+  padding: 0.7rem;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  color: #883000;
+}
+
+/* footer */
+
 footer {
-  background-color: pink;
+  background-color: #fdd89c;
+  color: #c76356;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
 }
