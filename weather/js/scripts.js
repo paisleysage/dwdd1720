@@ -75,3 +75,8 @@ myButton.addEventListener("click", () => {
 });
 
 // data validation for the zipcode
+
+myInput = document.querySelector("#newZip");
+myInput.addEventListener("input", () => {
+  myInput.value = myInput.value.slice(0, 5);
+});
