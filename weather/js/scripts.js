@@ -62,4 +62,16 @@ theSettings.addEventListener("click", () => {
   theModalBox.classList.toggle("show");
 });
 
+// set new zip
+const myButton = document.querySelector("#applyZip");
+myButton.addEventListener("click", () => {
+  console.log("you clicked me");
+  theModalBox.className = "";
+  let theZipCode = document.querySelector("#newZip").value;
+  if (theZipCode.length === 5) {
+    localStorage.setItem("myZipCode", theZipCode);
+  }
+  window.location.reload();
+});
+
 // data validation for the zipcode
