@@ -1,5 +1,12 @@
 // write a default zipcode
-let zip = "84120";
+let zip = localStorage.getItem("myZipCode");
+if (zip == null) {
+  let defaultZip = "84120";
+  localStorage.setItem("myZipCode", defaultZip);
+  zip = defaultZip;
+} // end if
+
+console.log(zip);
 
 // set path to api on weather
 const myKey = `14d39f65902a70efe1d8e665dbd48f84`;
