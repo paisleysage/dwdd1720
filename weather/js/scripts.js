@@ -56,5 +56,10 @@ function currentWeather(weatherResults) {
 } // end of current weather
 
 // ask for a new zipcode
+const theModalBox = document.querySelector("aside");
+const theSettings = document.querySelector("#settings");
+theSettings.addEventListener("click", () => {
+  theModalBox.classList.toggle("show");
+});
 
 // data validation for the zipcode

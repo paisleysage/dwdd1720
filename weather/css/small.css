@@ -32,6 +32,10 @@ aside {
   display: none;
 }
 
+aside.show {
+  display: block;
+}
+
 footer {
   background-color: pink;
 }
