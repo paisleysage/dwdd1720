@@ -43,6 +43,12 @@ function currentWeather(weatherResults) {
   myWeatherIcon.src = `https://openweathermap.org/img/wn/${weatherResults.weather[0].icon}@2x.png`;
   myWeatherIcon.alt = weatherResults.weather[0].description;
   parentTag.appendChild(myWeatherIcon);
+
+  // current temp
+  myCurrentTemp = document.createElement("p");
+  myCurrentTemp.className = "temp";
+  myCurrentTemp.innerHTML = weatherResults.main.temp + "&deg;F";
+  parentTag.appendChild(myCurrentTemp);
 } // end of current weather
 
 // ask for a new zipcode
