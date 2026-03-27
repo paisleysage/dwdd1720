@@ -30,6 +30,13 @@ function currentWeather(weatherResults) {
   console.log(weatherResults.main.temp);
   console.log(weatherResults.weather[0].icon);
 
+  // current date
+  const myDate = document.createElement("p");
+  myDate.className = "date";
+  const d = new Date();
+  myDate.textContent = d.toDateString();
+  parentTag.appendChild(myDate);
+
   // current icon
   const myWeatherIcon = document.createElement("img");
   // myWeatherIcon.src = `https://openweathermap.org/payload/api/media/file/${weatherResults.weather[0].icon}%402x.png`;
