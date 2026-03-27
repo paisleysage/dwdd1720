@@ -30,6 +30,10 @@ function currentWeather(weatherResults) {
   console.log(weatherResults.main.temp);
   console.log(weatherResults.weather[0].icon);
 
+  // add correct town
+  const myTown = document.querySelector("#town");
+  myTown.textContent = `Weather for ${weatherResults.name}`;
+
   // current date
   const myDate = document.createElement("p");
   myDate.className = "date";
