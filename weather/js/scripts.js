@@ -1,3 +1,6 @@
+// referneces to the html
+const parentTag = document.querySelector("#weatherCard");
+
 // write a default zipcode
 let zip = localStorage.getItem("myZipCode");
 if (zip == null) {
@@ -17,9 +20,23 @@ fetch(myPath)
   .then((response) => response.json())
   .then((allData) => {
     console.log(allData);
+    currentWeather(allData);
   });
 
 // function thta displays the current weather
+function currentWeather(weatherResults) {
+  console.log(weatherResults);
+  console.log(weatherResults.name);
+  console.log(weatherResults.main.temp);
+  console.log(weatherResults.weather[0].icon);
+
+  // current icon
+  const myWeatherIcon = document.createElement("img");
+  // myWeatherIcon.src = `https://openweathermap.org/payload/api/media/file/${weatherResults.weather[0].icon}%402x.png`;
+  myWeatherIcon.src = `https://openweathermap.org/img/wn/${weatherResults.weather[0].icon}@2x.png`;
+  myWeatherIcon.alt = weatherResults.weather[0].description;
+  parentTag.appendChild(myWeatherIcon);
+} // end of current weather
 
 // ask for a new zipcode
 
