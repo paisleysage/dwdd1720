@@ -3,7 +3,7 @@ const myNavigation = document.querySelector("nav");
 const myViewer = document.querySelector("main");
 
 // go grab the data and then WAIT for the result
-fetch("../data/starships.json")
+fetch("./data/starships.json")
   .then((response) => response.json())
   .then((shipArray) => {
     populateNav(shipArray);
