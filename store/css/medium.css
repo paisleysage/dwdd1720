@@ -1,0 +1,11 @@
+@media only screen and (min-width: 35rem) {
+  nav button {
+    flex-basis: 31%;
+    margin: 0.5rem 1%;
+    padding: 1rem 0;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 2.7rem;
+  }
+} /* end media query*/

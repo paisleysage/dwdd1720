@@ -1,0 +1,96 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* font stuff */
+
+body {
+  font-family: "chaloops", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  background: #8faca1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  color: #6c827d;
+  font-size: 2rem;
+  padding: 0 2%;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+/* header */
+header {
+  color: #e5f1ee;
+  text-align: center;
+  margin: 0;
+  padding: 0.7rem;
+  background-image: url("../images/plushies.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav button {
+  flex-basis: 48%;
+  margin: 0.5rem 1%;
+  padding: 1rem 0;
+  border: none;
+  color: #6c827d;
+  background-color: #e5f1ee;
+  border-radius: 8px;
+}
+
+nav button:hover {
+  color: #e5f1ee;
+  background-color: #8faca1;
+}
+
+button:active {
+  color: #e5f1ee;
+  background-color: #8faca1;
+}
+
+/* body */
+
+img {
+  padding: 0 2%;
+}
+
+p {
+  padding: 0 2%;
+}
+
+footer {
+  background-color: #e5f1ee;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #6c827d;
+}
